@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suitel" verbose="1" >
+
+    <!-- This parameter defines which browser the suite is going to run on -->
+    <!-- Possible options are defined here: src/main/java/enums/BrowserEnum.java -->
+
+    <parameter name="browser" value="CHROME"/>
+    <!--<parameter name="browser" value="FIREFOX"/>-->
+
+
+    <test name="TestBrowser">
+
+        <classes>
+            <!--<class name="TestHomePage"/>-->
+        </classes>
+
+    </test>
+
+
+
+</suite>
