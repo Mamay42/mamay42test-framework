@@ -23,7 +23,11 @@
 
 
         <classes>
+            <class name="TestDragDraggableBox"/>
+            <class name="TestFrameTabSwitching"/>
             <class name="TestRegistration"/>
+            <class name="TestSelectable"/>
+            <class name="TestTabSwitch"/>
         </classes>
 
     </test>
