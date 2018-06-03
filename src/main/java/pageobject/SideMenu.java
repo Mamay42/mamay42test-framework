@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import pageobject.sideMenuPages.DraggablePage;
+import pageobject.sideMenuPages.FramesAndWindowsPage;
 import pageobject.sideMenuPages.RegistrationPage;
 import pageobject.sideMenuPages.SelectablePage;
 
@@ -126,9 +127,9 @@ public class SideMenu extends TopMenu {
 
     }
 
-    public SideMenu clickFramesAndWindowsButton() {
+    public FramesAndWindowsPage clickFramesAndWindowsButton() {
         framesAndWindowsButton.click();
-        return PageFactory.initElements(driver, SideMenu.class);
+        return PageFactory.initElements(driver, FramesAndWindowsPage.class);
 
     }
 
