@@ -9,9 +9,21 @@
 
 
     <test name="TestBrowser">
+        <!--<parameter name="firstName" value="Vitalia"/>-->
+        <!--<parameter name="lastName" value="Vitaliaaaa"/>-->
+        <!--<parameter name="country" value="Ukraine"/>-->
+        <!--<parameter name="month" value="3"/>-->
+        <!--<parameter name="day" value="23"/>-->
+        <!--<parameter name="year" value="1990"/>-->
+        <!--<parameter name="phoneNumber" value="0678884422"/>-->
+        <!--<parameter name="username" value="vitalik"/>-->
+        <!--<parameter name="email" value="tt696616@gmail.com"/>-->
+        <!--<parameter name="description" value="some description "/>-->
+        <!--<parameter name="password" value="votalik123"/>-->
+
 
         <classes>
-            <!--<class name="TestHomePage"/>-->
+            <class name="TestRegistration"/>
         </classes>
 
     </test>
