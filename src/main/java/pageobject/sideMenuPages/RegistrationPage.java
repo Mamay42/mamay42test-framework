@@ -14,61 +14,61 @@ public class RegistrationPage extends SideMenu {
 
 
     @FindBy(id = "name_3_firstname")
-    protected WebElement firstNameInput;
+    public WebElement firstNameInput;
 
     @FindBy(id = "name_3_lastname")
-    protected WebElement lastNameInput;
+    public WebElement lastNameInput;
 
    @FindBy(xpath = "//input[@value = 'single']")
-   protected WebElement singleRadio;
+   public WebElement singleRadio;
 
     @FindBy(xpath = "//input[@value = 'married']")
-    protected WebElement marriedRadio;
+    public WebElement marriedRadio;
 
     @FindBy(xpath = "//input[@value = 'divorced']")
-    protected WebElement divorcedRadio;
+    public WebElement divorcedRadio;
 
     @FindBy(xpath = "//input[@value = 'dance']")
-    protected WebElement danceCheckbox;
+    public WebElement danceCheckbox;
 
     @FindBy(xpath = "//input[@value = 'reading']")
-    protected WebElement readingCheckbox;
+    public WebElement readingCheckbox;
 
     @FindBy(xpath = "//input[@value = 'cricket ']")
-    protected WebElement cricketChecbox;
+    public WebElement cricketChecbox;
 
     @FindBy(id = "dropdown_7")
-    protected WebElement countryDropdown;
+    public WebElement countryDropdown;
 
     @FindBy(id = "mm_date_8")
-    protected WebElement monthDropdown;
+    public WebElement monthDropdown;
 
     @FindBy(id = "dd_date_8")
-    protected WebElement dayDropdown;
+    public WebElement dayDropdown;
 
     @FindBy(id = "yy_date_8")
-    protected WebElement yearDropdown;
+    public WebElement yearDropdown;
 
     @FindBy(id = "phone_9")
-    protected WebElement phoneNumberInput;
+    public WebElement phoneNumberInput;
 
     @FindBy(id = "username")
-    protected WebElement usernameInput;
+    public WebElement usernameInput;
 
     @FindBy(id = "email_1")
-    protected WebElement emailInput;
+    public WebElement emailInput;
 
     @FindBy(id = "description")
-    protected WebElement descriptionInput;
+    public WebElement descriptionInput;
 
     @FindBy(id = "password_2")
-    protected WebElement passwordInput;
+    public WebElement passwordInput;
 
     @FindBy(id = "confirm_password_password_2")
-    protected WebElement confirmPasswordInput;
+    public WebElement confirmPasswordInput;
 
     @FindBy(xpath = "//input[@name = 'pie_submit']")
-    protected WebElement submitButton;
+    public WebElement submitButton;
 
     private WebDriver driver;
 

@@ -15,7 +15,7 @@ public class TestBase {
     public static final String DEMOQA_URL = "http://demoqa.com/";
     protected WebDriver driver;
     protected HomePage homePage;
-    protected ScreenshotMaker screenshotMaker;
+    protected ScreenshotMaker screenshotMaker = new ScreenshotMaker(driver);
 
 
     @BeforeClass
