@@ -4,9 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import pageobject.sideMenuPages.DraggablePage;
 import pageobject.sideMenuPages.RegistrationPage;
+import pageobject.sideMenuPages.SelectablePage;
 
-public class SideMenu extends  TopMenu{
+public class SideMenu extends TopMenu {
 //    private static  final Logger LOG = LogFactory.getLogger(SideMenu.class);
 
 
@@ -51,66 +53,80 @@ public class SideMenu extends  TopMenu{
         return PageFactory.initElements(driver, RegistrationPage.class);
 
     }
-    public SideMenu clickDraggableButtonButton() {
+
+    public DraggablePage clickDraggableButton() {
         draggableButton.click();
-        return PageFactory.initElements(driver, SideMenu.class);
+        return PageFactory.initElements(driver, DraggablePage.class);
 
     }
-    public SideMenu clickDroppablebleButtonButton() {
+
+    public SideMenu clickDroppablebleButton() {
         droppablebleButton.click();
         return PageFactory.initElements(driver, SideMenu.class);
 
     }
-    public SideMenu clickResizableButtonButton() {
+
+    public SideMenu clickResizableButton() {
         resizableButton.click();
         return PageFactory.initElements(driver, SideMenu.class);
 
     }
-    public SideMenu clickSelectablebleButtonButton() {
+
+    public SelectablePage clickSelectablebleButton() {
         selectablebleButton.click();
-        return PageFactory.initElements(driver, SideMenu.class);
+        return PageFactory.initElements(driver, SelectablePage.class);
 
     }
-    public SideMenu clickSortableButtonButton() {
+
+    public SideMenu clickSortableButton() {
         sortableButton.click();
         return PageFactory.initElements(driver, SideMenu.class);
 
     }
-    public SideMenu clickAccordionButtonButton() {
+
+    public SideMenu clickAccordionButton() {
         accordionButton.click();
         return PageFactory.initElements(driver, SideMenu.class);
 
-    }public SideMenu clickAutocomleteButtonButton() {
+    }
+
+    public SideMenu clickAutocomleteButton() {
         autocomleteButton.click();
         return PageFactory.initElements(driver, SideMenu.class);
 
     }
-    public SideMenu clickDatepickerButtonButton() {
+
+    public SideMenu clickDatepickerButton() {
         datepickerButton.click();
         return PageFactory.initElements(driver, SideMenu.class);
 
     }
-    public SideMenu clickMenuButtonButton() {
+
+    public SideMenu clickMenuButton() {
         menuButton.click();
         return PageFactory.initElements(driver, SideMenu.class);
 
     }
-    public SideMenu clickSliderButtonButton() {
+
+    public SideMenu clickSliderButton() {
         sliderButton.click();
         return PageFactory.initElements(driver, SideMenu.class);
 
     }
-    public SideMenu clickTabsButtonButton() {
+
+    public SideMenu clickTabsButton() {
         tabsButton.click();
         return PageFactory.initElements(driver, SideMenu.class);
 
     }
-    public SideMenu clickTooltipButtonButton() {
+
+    public SideMenu clickTooltipButton() {
         tooltipButton.click();
         return PageFactory.initElements(driver, SideMenu.class);
 
     }
-    public SideMenu clickFramesAndWindowsButtonButton() {
+
+    public SideMenu clickFramesAndWindowsButton() {
         framesAndWindowsButton.click();
         return PageFactory.initElements(driver, SideMenu.class);
 
