@@ -1,5 +1,5 @@
 import common.TestBase;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pageobject.sideMenuPages.FramesAndWindowsPage;
 
@@ -9,11 +9,12 @@ public class TestTabSwitch extends TestBase {
 
     FramesAndWindowsPage framesAndWindowsPage;
 
-    @BeforeClass
+    @BeforeMethod
     public void openFrameAndWindowPage() {
         framesAndWindowsPage = homePage.clickFramesAndWindowsButton();
 
     }
+
 
     @Test
     public void stwitchTab() {
