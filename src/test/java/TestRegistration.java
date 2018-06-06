@@ -13,6 +13,7 @@ public class TestRegistration extends TestBase {
                         "vitalik12", "tt69661611@gmail.com","some description ", "votalik123"}};
     }
 
+
     @Test(dataProvider = "userData")
     public void testRegistration(String firstName, String lastName, String country,
                                  String month, String day, String year, String phoneNumber,
