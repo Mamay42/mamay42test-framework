@@ -3,7 +3,6 @@
 
     <!-- This parameter defines which browser the suite is going to run on -->
     <!-- Possible options are defined here: src/main/java/enums/BrowserEnum.java -->
-
     <parameter name="browser" value="CHROME"/>
     <!--<parameter name="browser" value="FIREFOX"/>-->
 
@@ -26,6 +25,7 @@
             <class name="TestDragDraggableBox"/>
             <class name="TestFrameTabSwitching"/>
             <class name="TestRegistration"/>
+            <class name="TestRegistrationInvalidData"/>
             <class name="TestSelectable"/>
             <class name="TestTabSwitch"/>
         </classes>
