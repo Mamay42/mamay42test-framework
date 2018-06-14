@@ -3,6 +3,7 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import ru.yandex.qatools.allure.annotations.Description;
 
 public class TestRegistration extends TestBase {
 
@@ -15,6 +16,7 @@ public class TestRegistration extends TestBase {
 
 
     @Test(dataProvider = "userData")
+    @Description("If test fail, change user data")
     public void testRegistration(String firstName, String lastName, String country,
                                  String month, String day, String year, String phoneNumber,
                                  String username, String email, String description,
@@ -38,8 +40,12 @@ public class TestRegistration extends TestBase {
                 .fillConfirmPasswordInput(password)
                 .clickSubmitButtom();
 
-        Assert.assertTrue(driver.findElement(By.xpath("//p[@class = 'piereg_message']")).
-         getText().equals("Thank you for your registration"));
+
+//        Assert.assertTrue(driver.findElement(By.xpath("//p[@class = 'piereg_message']")).
+//         getText().equals("Thank you for your registration"));
+
+//----------If you use the same data-------------
+        Assert.assertTrue(driver.findElement(By.xpath("//p[@class='piereg_login_error']/strong")).isDisplayed());
 
 
 

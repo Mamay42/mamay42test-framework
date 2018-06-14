@@ -34,7 +34,6 @@ public class TestDragDraggableBox extends TestBase {
                 "Failed to drag the box by correct Y offset");
 
 
-
     }
 
 

@@ -1,4 +1,6 @@
 import common.TestBase;
+import ru.yandex.qatools.allure.annotations.Description;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
@@ -9,12 +11,15 @@ import pageobject.sideMenuPages.SelectablePage;
 public class TestSelectable extends TestBase {
 
     SelectablePage selectablePage;
+
     @BeforeClass
     public void openSelectablePage() {
         selectablePage = homePage.clickSelectablebleButton();
     }
 
+
     @Test
+    @Description("This test will choose  1 , 5, 6, 11 elements")
     public void clickGridElements() {
         selectablePage.clickDisplayAsGridButton();
         new Actions(driver)
