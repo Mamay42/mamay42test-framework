@@ -40,8 +40,12 @@ public class TestRegistration extends TestBase {
                 .fillConfirmPasswordInput(password)
                 .clickSubmitButtom();
 
-        Assert.assertTrue(driver.findElement(By.xpath("//p[@class = 'piereg_message']")).
-         getText().equals("Thank you for your registration"));
+
+//        Assert.assertTrue(driver.findElement(By.xpath("//p[@class = 'piereg_message']")).
+//         getText().equals("Thank you for your registration"));
+
+//----------If you use the same data-------------
+        Assert.assertTrue(driver.findElement(By.xpath("//p[@class='piereg_login_error']/strong")).isDisplayed());
 
 
 

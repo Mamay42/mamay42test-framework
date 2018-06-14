@@ -4,10 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import pageobject.sideMenuPages.DraggablePage;
-import pageobject.sideMenuPages.FramesAndWindowsPage;
-import pageobject.sideMenuPages.RegistrationPage;
-import pageobject.sideMenuPages.SelectablePage;
+import pageobject.sideMenuPages.*;
 
 public class SideMenu extends TopMenu {
 //    private static  final Logger LOG = LogFactory.getLogger(SideMenu.class);
@@ -61,9 +58,9 @@ public class SideMenu extends TopMenu {
 
     }
 
-    public SideMenu clickDroppablebleButton() {
+    public DroppablePage clickDroppableButton() {
         droppablebleButton.click();
-        return PageFactory.initElements(driver, SideMenu.class);
+        return PageFactory.initElements(driver, DroppablePage.class);
 
     }
 

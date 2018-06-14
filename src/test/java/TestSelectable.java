@@ -7,7 +7,6 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pageobject.sideMenuPages.SelectablePage;
-import ru.yandex.qatools.allure.annotations.Step;
 
 public class TestSelectable extends TestBase {
 
